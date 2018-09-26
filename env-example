@@ -35,6 +35,7 @@ COMPOSE_PROJECT_NAME=laradock
 ### PHP Version ###########################################
 
 # Select a PHP version of the Workspace and PHP-FPM containers (Does not apply to HHVM). Accepted values: 7.2 - 7.1 - 7.0 - 5.6
+# armhf - only version 7.2 supported in nicksonyap/laradock-workspace-armhf (for armhf)
 PHP_VERSION=7.2
 
 ### Phalcon Version ###########################################
@@ -191,7 +192,8 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+# armhf - only version 5.5 supported in hypriot/rpi-mysql (for armhf)
+MYSQL_VERSION=5.5
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret

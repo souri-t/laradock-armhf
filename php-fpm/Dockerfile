@@ -14,7 +14,9 @@
 
 ARG LARADOCK_PHP_VERSION
 
-FROM laradock/php-fpm:2.2-${LARADOCK_PHP_VERSION}
+#FROM laradock/php-fpm:2.2-${LARADOCK_PHP_VERSION}
+# armhf - version 2.2 of laradock/workspace not available in nicksonyap/laradock-workspace-armhf (for armhf)
+FROM nicksonyap/laradock-php-fpm-armhf:2.0-${LARADOCK_PHP_VERSION}
 
 LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 
